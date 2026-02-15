@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&family=Bitcount+Grid+Double&display=swap');
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+body {
+    font-family: 'Sniglet', sans-serif;
+    background-image: url('https://images.pexels.com/photos/18716732/pexels-photo-18716732.jpeg?auto=compress&cs=tinysrgb&w=1920&fit=max');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    font-family: 'Bitcount Grid Double', monospace;
+    color: #e9d53f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
+
+p {
+    color: #661060;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: 30px;
+    position: relative;
+    text-align: left;
+}
+
+button {
+    background-color: #fff9b6;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: pulse 3s infinite;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+#chiBtn {
+    background-color: #faffb6;
+}
+
+#chiBtn:hover {
+    background-color: #ffe669;
+}
+
+#noBtn {
+    background-color: #da98fb;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 40px;
+}
+
+#noBtn:hover {
+  background-color: #b132cd;
+}
+
+.sad-cat-img {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#sadCat {
+    width: 50px;
+    height: 45px;
+}
+
+#sadcat-rana {
+    position: fixed;
+    right: 140px;
+    top: 35%;
+    transform: translateY(-50%);
+    width: 200px !important;
+    height: auto !important;
+    max-width: none !important;
+    z-index: 5 !important;
+}
+
+.mudkip-gif {
+    position: fixed;
+    left: 50px;
+    transform: translateY(-50%);
+    top: 30%;
+    max-width: 100px;
+    z-index: 5;
+}
+
+@media (max-width: 414px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+        margin: 0 5px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+}
